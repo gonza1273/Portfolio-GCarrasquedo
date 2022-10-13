@@ -1,0 +1,83 @@
+/* Encabezado */
+.Encabezado{
+    /* Formato Texto */
+    text-align: center;
+    font-size: 50px;
+    font-weight: 700;
+    font-family: 'Roboto', sans-serif;
+    color: #ac1616;
+    /* Imagen Fondo */
+    background-image: url(../img/imagen-encabezado.jpg);
+    background-size: contain;
+    opacity: 0.5;
+}
+
+/* Navegacion */
+.navegacion{
+    /* Distribucion en pagina */
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: space-evenly;
+    /* Formato Texto */
+    font-family: 'Roboto', sans-serif;
+    font-size: 20px;
+    font-weight: 400;
+    color: #ac1616;
+}
+
+/* Botones Navegacion */
+.nav-titulo{
+    /* Modelo box */
+        /* Bordes */
+        border-width: 2px;
+        border-bottom: 2px;
+        border-left: 2px;
+        border-top: 2px;
+        border-right: 2px;
+        border-color: #000000;
+        border-style: solid;
+        /* Distancia borde/texto */
+        padding-left: 75px;
+        padding-top: 5px;
+        padding-right: 75px;
+        padding-bottom: 5px;
+}
+
+/* Formato Titulo */
+.titulo-pagina{
+    font-size: 30px;
+    font-family: 'Roboto', sans-serif;
+    font-weight: 900;
+    margin-left: 3px;
+}
+/* Pagina navegacion */
+.parrafo{   
+    /* Fondo */
+    background-color: #afacac;
+    height: 400px;
+    /* Formato Texto */
+    font-size: 15px;
+    font-family: 'Roboto', sans-serif;
+    font-weight: 400;
+    margin-left: 3px;
+    margin-right: 3px;
+}
+
+/* Chequeos Padre*/
+.lista-chequeos{
+    height: 400px;
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    grid-template-rows: repeat(5, 2fr);
+    justify-items: center;
+    align-items: center;
+}
+/* hijo */
+.chequeo{
+    background-color: #828282d8;
+    border: solid 1px black;
+    color: #000000;
+    padding: 25px 120px;
+    text-decoration: none;
+}
