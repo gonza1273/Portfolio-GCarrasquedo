@@ -85,7 +85,7 @@
 
 .mapa{
     background-color: #afacac;
-    height: 400px;
+    height: 600px;
     display: flex;
     align-items: center;
     justify-items: center;
@@ -155,8 +155,8 @@
         height: 800px;
         width: 100%;
         display: grid;
-        grid-template-columns: 1fr;
-        grid-template-rows: repeat(10, 1fr);
+        grid-template-columns: 1fr 1fr;
+        grid-template-rows: repeat(5, 1fr);
         align-items: center;
         justify-items: center;
     }
@@ -171,10 +171,11 @@
     
     .navegacion{
         /* Distribucion en pagina */
-        display: flex;
-        flex-direction: column;
+        display: grid;
+        grid-template-columns: repeat(3, 1fr);
+        grid-template-rows: repeat(2, 1fr);
         align-items: center;
-        justify-content: center;
+        justify-items: center;
         /* Formato Texto */
         font-family: 'Roboto', sans-serif;
         font-size: 25px;
@@ -191,4 +192,42 @@
     0%{
         transform: translateY(100%)
     }
+}
+
+@media screen and (max-width: 525px) {
+    .lista-chequeo {
+        background-color: #f90202be;
+        height: 800px;
+        width: 100%;
+        display: grid;
+        grid-template-columns: 1fr;
+        grid-template-rows: repeat(10, 1fr);
+        align-items: center;
+        justify-items: center;
+    }
+    .chequeo{
+        background-color: #828282d8;
+        color: #000000;
+        padding: 25px 60px;
+        text-decoration: none;
+        margin: 1px;
+        transition-property: all;
+    }
+}
+
+@media screen and (max-width: 610px){
+    
+    .navegacion{
+        /* Distribucion en pagina */
+        display: grid;
+        grid-template-columns: 1fr;
+        grid-template-rows: repeat(6, 1fr);
+        align-items: center;
+        justify-items: center;
+        /* Formato Texto */
+        font-family: 'Roboto', sans-serif;
+        font-size: 25px;
+        font-weight: 400;
+    }
+    
 }
