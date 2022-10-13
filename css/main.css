@@ -28,20 +28,32 @@
 
 /* Botones Navegacion */
 .nav-titulo{
-    /* Modelo box */
-        /* Bordes */
-        border-width: 2px;
-        border-bottom: 2px;
-        border-left: 2px;
-        border-top: 2px;
-        border-right: 2px;
-        border-color: #000000;
-        border-style: solid;
-        /* Distancia borde/texto */
-        padding-left: 75px;
-        padding-top: 5px;
-        padding-right: 75px;
-        padding-bottom: 5px;
+    /* Modifica borde caja */
+    border: 2px solid;
+    border-color: #000000;
+    border-radius: 5px;
+
+    /* modifica separacion de texto al borde de caja */
+    padding: 2px 50px;
+
+    /* margenes */
+    margin-top: 5xp;
+    margin-bottom: 5px;
+    margin-left: 5px;
+    margin-right: 5px;
+
+    /* alinea textos uno al lado de otro */
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: space-evenly;
+    
+    /* color, tamaño y tipo de letra */
+    color: #000000;
+    font-weight: 300;
+    font-size: 20px;
+    font-family: 'Work Sans', sans-serif;
+    text-align: center;
 }
 
 /* Formato Titulo */
@@ -64,6 +76,21 @@
     margin-right: 3px;
 }
 
+.ubicacion{
+    background-color: #8b0000;
+    height: 50px;
+    color: #000000;
+    font-size: 30px;
+}
+
+.mapa{
+    background-color: #afacac;
+    height: 400px;
+    display: flex;
+    align-items: center;
+    justify-items: center;
+}
+
 /* Chequeos Padre*/
 .lista-chequeos{
     height: 400px;
@@ -80,4 +107,88 @@
     color: #000000;
     padding: 25px 120px;
     text-decoration: none;
+}
+
+/* Prueba git */
+.lista-chequeo {
+    background-color: #474797f0;
+    height: 400px;
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    grid-template-rows: repeat(5, 2fr);
+    justify-items: center;
+    align-items: center;
+    animation-name: entrada-central;
+    animation-duration: 1s;
+}
+
+/* Navegacion */
+.navegacion{
+    /* Distribucion en pagina */
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: space-evenly;
+    /* Formato Texto */
+    font-family: 'Roboto', sans-serif;
+    font-size: 20px;
+    font-weight: 400;
+}
+
+.chequeo {
+    background-color: #828282d8;
+    color: #000000;
+    padding: 25px 120px;
+    text-decoration: none;
+    border: solid 1px black;
+}
+
+.titulo-pagina{
+    font-size: 25px;
+    font-family: sans-serif;
+    font-weight: bolder;
+}
+
+@media screen and (max-width: 768px) {
+    .lista-chequeo {
+        background-color: #f90202be;
+        height: 800px;
+        width: 100%;
+        display: grid;
+        grid-template-columns: 1fr;
+        grid-template-rows: repeat(10, 1fr);
+        align-items: center;
+        justify-items: center;
+    }
+    .chequeo{
+        background-color: #828282d8;
+        color: #000000;
+        padding: 25px 60px;
+        text-decoration: none;
+        margin: 1px;
+        transition-property: all;
+    }
+    
+    .navegacion{
+        /* Distribucion en pagina */
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        /* Formato Texto */
+        font-family: 'Roboto', sans-serif;
+        font-size: 25px;
+        font-weight: 400;
+    }
+}
+
+.chequeo:hover {
+    background-color: red;
+    transform: scale(3);
+}
+
+@keyframes entrada-central{
+    0%{
+        transform: translateY(100%)
+    }
 }
