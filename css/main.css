@@ -77,7 +77,6 @@
 }
 
 .ubicacion{
-    background-color: #8b0000;
     height: 50px;
     color: #000000;
     font-size: 30px;
@@ -111,7 +110,7 @@
 
 /* Prueba git */
 .lista-chequeo {
-    background-color: #474797f0;
+    background-color: #f90202be;
     height: 400px;
     display: grid;
     grid-template-columns: repeat(2, 1fr);
