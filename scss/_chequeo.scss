@@ -1,0 +1,26 @@
+/* hijo */
+.chequeo{
+    background-color: #828282d8;
+    border: solid 1px black;
+    color: #000000;
+    padding: 25px 120px;
+    text-decoration: none;
+}
+
+@media screen and (max-width: 768px) {
+    .chequeo{
+        padding: 25px 60px;
+        margin: 1px;
+        transition-property: all;
+    }
+}
+.chequeo:hover {
+    background-color: red;
+    transform: scale(3);
+}
+
+@keyframes entrada-central{
+    0%{
+        transform: translateY(100%)
+    }
+}

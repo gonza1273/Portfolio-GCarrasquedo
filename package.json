@@ -1,0 +1,26 @@
+{
+  "name": "portfolio-gcarrasquedo",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "build-css": "node-sass --include-path scss scss/main.scss css/main.css",
+    "watch-css":"nodemon -e scss -x \"npm run build-css\""
+
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/gonza1273/Portfolio-GCarrasquedo.git"
+  },
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/gonza1273/Portfolio-GCarrasquedo/issues"
+  },
+  "homepage": "https://github.com/gonza1273/Portfolio-GCarrasquedo#readme",
+  "devDependencies": {
+    "node-sass": "^7.0.3",
+    "nodemon": "^2.0.20"
+  }
+}

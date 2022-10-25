@@ -1,0 +1,13 @@
+/* Encabezado */
+.Encabezado{
+    /* Formato Texto */
+    text-align: center;
+    font-size: 50px;
+    font-weight: 700;
+    font-family: 'Roboto', sans-serif;
+    color: #ac1616;
+    /* Imagen Fondo */
+    background-image: url(../img/imagen-encabezado.jpg);
+    background-size: contain;
+    opacity: 0.5;
+}

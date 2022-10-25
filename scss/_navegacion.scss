@@ -1,0 +1,35 @@
+/* Navegacion */
+.navegacion{
+    /* Distribucion en pagina */
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: space-evenly;
+    /* Formato Texto */
+    font-family: 'Roboto', sans-serif;
+    font-size: 20px;
+    font-weight: 400;
+    color: #ac1616;
+}
+
+@media screen and (max-width: 768px) {
+    .navegacion{
+        /* Distribucion en pagina */
+        display: grid;
+        grid-template-columns: repeat(3, 1fr);
+        grid-template-rows: repeat(2, 1fr);
+        align-items: center;
+        justify-items: center;
+    }
+}
+
+@media screen and (max-width: 610px){
+    .navegacion{
+        /* Distribucion en pagina */
+        grid-template-columns: 1fr;
+        grid-template-rows: repeat(6, 1fr);
+        /* Formato Texto */
+        font-family: 'Roboto', sans-serif;
+        font-size: 25px;
+    }
+}

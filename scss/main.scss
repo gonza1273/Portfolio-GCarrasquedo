@@ -1,0 +1,38 @@
+@import "encabezado";
+@import "navegacion";
+@import "parrafo";
+@import "titulo-pagina";
+@import "chequeo";
+@import "lista-chequeo";
+
+.ubicacion{
+    height: 50px;
+    color: #000000;
+    font-size: 30px;
+}
+
+.mapa{
+    background-color: #afacac;
+    height: 600px;
+    display: flex;
+    align-items: center;
+    justify-items: center;
+}
+
+footer {
+    background-color: #828282d8;
+    color: #000000;
+    margin-left: 3px;
+    margin-right: 3px;
+    text-decoration: none;
+}
+
+footer div a{
+    color: #000000;
+    text-decoration: none;
+}
+
+footer div:nth-child(even){
+    background-color: #ef5c5cd8;
+    color: #000000;
+}
