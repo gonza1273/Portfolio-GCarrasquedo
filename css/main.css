@@ -26,43 +26,6 @@
     color: #ac1616;
 }
 
-/* Botones Navegacion */
-.nav-titulo{
-    /* Modifica borde caja */
-    border: 2px solid;
-    border-color: #000000;
-    border-radius: 5px;
-
-    /* modifica separacion de texto al borde de caja */
-    padding: 2px 50px;
-
-    /* margenes */
-    margin-top: 5xp;
-    margin-bottom: 5px;
-    margin-left: 5px;
-    margin-right: 5px;
-
-    /* alinea textos uno al lado de otro */
-    display: flex;
-    flex-direction: row;
-    flex-wrap: wrap;
-    justify-content: space-evenly;
-    
-    /* color, tamaño y tipo de letra */
-    color: #000000;
-    font-weight: 300;
-    font-size: 20px;
-    font-family: 'Work Sans', sans-serif;
-    text-align: center;
-}
-
-/* Formato Titulo */
-.titulo-pagina{
-    font-size: 30px;
-    font-family: 'Roboto', sans-serif;
-    font-weight: 900;
-    margin-left: 3px;
-}
 /* Pagina navegacion */
 .parrafo{   
     /* Fondo */
@@ -75,11 +38,17 @@
     margin-left: 3px;
     margin-right: 3px;
 }
-
 .ubicacion{
     height: 50px;
     color: #000000;
     font-size: 30px;
+}
+
+.titulo-pagina{
+    font-size: 30px;
+    font-family: 'Roboto', sans-serif;
+    font-weight: 900;
+    margin-left: 3px;
 }
 
 .mapa{
@@ -90,15 +59,6 @@
     justify-items: center;
 }
 
-/* Chequeos Padre*/
-.lista-chequeos{
-    height: 400px;
-    display: grid;
-    grid-template-columns: repeat(2, 1fr);
-    grid-template-rows: repeat(5, 2fr);
-    justify-items: center;
-    align-items: center;
-}
 /* hijo */
 .chequeo{
     background-color: #828282d8;
@@ -119,51 +79,37 @@
     align-items: center;
     animation-name: entrada-central;
     animation-duration: 1s;
+    margin-left: 3px;
+    margin-right: 3px;
 }
 
-/* Navegacion */
-.navegacion{
-    /* Distribucion en pagina */
-    display: flex;
-    flex-direction: row;
-    flex-wrap: wrap;
-    justify-content: space-evenly;
-    /* Formato Texto */
-    font-family: 'Roboto', sans-serif;
-    font-size: 20px;
-    font-weight: 400;
-}
-
-.chequeo {
+footer {
     background-color: #828282d8;
     color: #000000;
-    padding: 25px 120px;
+    margin-left: 3px;
+    margin-right: 3px;
     text-decoration: none;
-    border: solid 1px black;
 }
 
-.titulo-pagina{
-    font-size: 25px;
-    font-family: sans-serif;
-    font-weight: bolder;
+footer div a{
+    color: #000000;
+    text-decoration: none;
 }
+
+footer div:nth-child(even){
+    background-color: #ef5c5cd8;
+    color: #000000;
+}
+
 
 @media screen and (max-width: 768px) {
     .lista-chequeo {
-        background-color: #f90202be;
         height: 800px;
         width: 100%;
-        display: grid;
-        grid-template-columns: 1fr 1fr;
         grid-template-rows: repeat(5, 1fr);
-        align-items: center;
-        justify-items: center;
     }
     .chequeo{
-        background-color: #828282d8;
-        color: #000000;
         padding: 25px 60px;
-        text-decoration: none;
         margin: 1px;
         transition-property: all;
     }
@@ -175,10 +121,6 @@
         grid-template-rows: repeat(2, 1fr);
         align-items: center;
         justify-items: center;
-        /* Formato Texto */
-        font-family: 'Roboto', sans-serif;
-        font-size: 25px;
-        font-weight: 400;
     }
 }
 
@@ -195,22 +137,8 @@
 
 @media screen and (max-width: 525px) {
     .lista-chequeo {
-        background-color: #f90202be;
-        height: 800px;
-        width: 100%;
-        display: grid;
         grid-template-columns: 1fr;
         grid-template-rows: repeat(10, 1fr);
-        align-items: center;
-        justify-items: center;
-    }
-    .chequeo{
-        background-color: #828282d8;
-        color: #000000;
-        padding: 25px 60px;
-        text-decoration: none;
-        margin: 1px;
-        transition-property: all;
     }
 }
 
@@ -218,15 +146,11 @@
     
     .navegacion{
         /* Distribucion en pagina */
-        display: grid;
         grid-template-columns: 1fr;
         grid-template-rows: repeat(6, 1fr);
-        align-items: center;
-        justify-items: center;
         /* Formato Texto */
         font-family: 'Roboto', sans-serif;
         font-size: 25px;
-        font-weight: 400;
     }
     
 }
