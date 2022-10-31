@@ -46,12 +46,22 @@
   /* Fondo */
   background-color: #afacac;
   height: 400px;
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  grid-template-rows: 1fr;
+  justify-items: center;
+  align-items: center;
   /* Formato Texto */
   font-size: 15px;
   font-family: 'Roboto', sans-serif;
   font-weight: 400;
   margin-left: 3px;
   margin-right: 3px; }
+
+@media screen and (max-width: 768px) {
+  .parrafo {
+    grid-template-columns: 1fr;
+    height: 800px; } }
 
 .titulo-pagina {
   font-family: 'Roboto', sans-serif;
@@ -113,6 +123,17 @@
   height: 50px;
   color: #000000;
   font-size: 30px; }
+
+.parrafo-contacto {
+  /* Fondo */
+  background-color: #afacac;
+  height: 400px;
+  /* Formato Texto */
+  font-size: 15px;
+  font-family: 'Roboto', sans-serif;
+  font-weight: 400;
+  margin-left: 3px;
+  margin-right: 3px; }
 
 .mapa {
   background-color: #afacac;

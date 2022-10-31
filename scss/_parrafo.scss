@@ -3,6 +3,11 @@
     /* Fondo */
     background-color: #afacac;
     height: 400px;
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    grid-template-rows: 1fr;
+    justify-items: center;
+    align-items: center;
     /* Formato Texto */
     font-size: 15px;
     font-family: 'Roboto', sans-serif;
@@ -10,3 +15,9 @@
     margin-left: 3px;
     margin-right: 3px;
 }
+@media screen and (max-width: 768px) {
+    .parrafo{
+        grid-template-columns: 1fr;
+        height: 800px;
+    }
+    }
