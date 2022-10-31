@@ -36,3 +36,23 @@ footer div:nth-child(even){
     background-color: #ef5c5cd8;
     color: #000000;
 }
+
+// condicional
+
+$animal: perro;
+
+h2{
+    @if $animal == gato{
+        color: #ff0000cd
+        }
+    @else {
+        color: #0000ffb3;
+    }
+}
+
+// bucles
+@for $i from 1 through 6 {
+    h#{$i} {
+        font-size: 60px / $i;
+    }
+}

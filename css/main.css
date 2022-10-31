@@ -2,7 +2,6 @@
 .Encabezado {
   /* Formato Texto */
   text-align: center;
-  font-size: 50px;
   font-weight: 700;
   font-family: 'Roboto', sans-serif;
   color: #ac1616;
@@ -55,7 +54,6 @@
   margin-right: 3px; }
 
 .titulo-pagina {
-  font-size: 30px;
   font-family: 'Roboto', sans-serif;
   font-weight: 900;
   margin-left: 3px; }
@@ -137,3 +135,24 @@ footer div a {
 footer div:nth-child(even) {
   background-color: #ef5c5cd8;
   color: #000000; }
+
+h2 {
+  color: #0000ffb3; }
+
+h1 {
+  font-size: 60px; }
+
+h2 {
+  font-size: 30px; }
+
+h3 {
+  font-size: 20px; }
+
+h4 {
+  font-size: 15px; }
+
+h5 {
+  font-size: 12px; }
+
+h6 {
+  font-size: 10px; }
