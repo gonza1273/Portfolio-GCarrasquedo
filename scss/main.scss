@@ -4,23 +4,13 @@
 @import "titulo-pagina";
 @import "chequeo";
 @import "lista-chequeo";
+@import "contacto";
 
 .ubicacion{
     height: 50px;
     color: #000000;
     font-size: 30px;
 }
-
-.parrafo-contacto{
-    /* Fondo */
-    background-color: #afacac;
-    height: 800px;
-    /* Formato Texto */
-    font-size: 15px;
-    font-family: 'Roboto', sans-serif;
-    font-weight: 400;
-    margin-left: 3px;
-    margin-right: 3px; }
 
 .mapa{
     background-color: #afacac;

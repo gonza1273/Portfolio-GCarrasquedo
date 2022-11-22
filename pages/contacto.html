@@ -28,7 +28,7 @@
 
   <!-- Navegacion -->
   <div>
-    <nav class="navbar navbar-expand-lg bg-light">
+    <nav class="navbar navbar-expand-lg" style="background-color: #fde3e3;">
       <div class="container-fluid">
         <a class="navbar-brand" href="../index.html">GC-CHEQUEOS</a>
         
@@ -68,32 +68,37 @@
         <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Suscipit velit exercitationem molestiae temporibus laboriosam mollitia repudiandae hic dolorum enim corporis beatae possimus, est officiis recusandae? Magni autem unde nihil perferendis!. Lorem ipsum dolor sit amet consectetur adipisicing elit. Expedita soluta excepturi culpa commodi, praesentium accusantium reprehenderit optio, ducimus cupiditate officiis, odit cum non sint. Quas rerum eaque quae similique dolorum!</p>
   <div>
   <!-- Formulario de Contacto --> 
-  <form action="">
-    <div>
-      <label for="">Nombre:</label>
-      <input type="text">
-    </div>
-    <div>
-      <label for="">Correo Electronico:</label>
-      <input type="email">
-    </div>
-    <div>
-      <Div><label for="">Consulta:</label></Div>
-      <Div><textarea name="Consulta:" id="" cols="30" rows="10"></textarea>></Div>
-    </div>
-    <div>
-      <label for="">Si</label>
-      <input type="radio" name="ok" value="">
-      <label for="">No</label>
-      <input type="radio" name="ok" value="">
-    </div>
-    <div>
-      <label for="">¿En que podriamos mejoras?:</label>
-      <div><textarea name="" id="" cols="30" rows="10"></textarea></div>
-    </div>
-    <div>
-      <label for="">Acepto Terminos y Condiciones</label>
-      <input type="checkbox" name="" value=""> 
+  <form action="" class="contacto">
+    <ul class="list-group">
+      <li class="list-group-item">
+        <div>
+          <label for="">Nombre:</label>
+          <input type="text">
+        </div>
+      </li>
+      <li class="list-group-item">
+        <div>
+          <label for="">Correo Electronico:</label>
+          <input type="email">
+        </div>
+      </li>
+    </ul>
+    <div class="list-group">
+      <a href="#" class="list-group-item list-group-item-action active" aria-current="true">
+        <div class="d-flex w-100 justify-content-between">
+          <h5 class="mb-1">Consulta:</h5>
+          <small>    
+          <div>
+            <textarea name="Consulta:" id=""></textarea>>
+          </div>
+          </small>
+        </div>
+        <p class="mb-1">    
+        <li class="list-group-item">
+          <input class="form-check-input me-1" type="checkbox" value="" id="firstCheckboxStretched">
+          <label class="form-check-label stretched-link" for="firstCheckboxStretched">Acepto Terminos y condiciones</label>
+        </li>
+        </p>
     </div>
     <div>
         <input type="submit" value="Enviar">
